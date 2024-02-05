@@ -13,6 +13,7 @@ class theNewsListViewer extends StatelessWidget {
               top: 15.0, left: 9, right: 9),
           child: Container(
             height: MediaQuery.of(context).size.height / 3.7,
+            width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
               color:Colors.purpleAccent,
               border: Border.all(
@@ -23,17 +24,10 @@ class theNewsListViewer extends StatelessWidget {
             ),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: TextField(
+              child: Text(
                 // controller: widget.messageSenderControllergg,
-                onChanged: (value) {},
-                maxLines: null,
-                style: const TextStyle(color: Colors.white70),
-                decoration: const InputDecoration(
-                  border: InputBorder.none,
-                  hintText: 'first search result will go here',
-                  hintStyle: TextStyle(color: Colors.white70),
-                ),
-              ),
+                "first search result will go here"
+               ),
             ),
           ),
         ),
@@ -43,6 +37,7 @@ class theNewsListViewer extends StatelessWidget {
               top: 15.0, left: 9, right: 9),
           child: Container(
             height: MediaQuery.of(context).size.height / 3.7,
+            width: MediaQuery.of(context).size.width,
             decoration: BoxDecoration(
               color: Colors.purpleAccent,
               border: Border.all(
@@ -53,17 +48,10 @@ class theNewsListViewer extends StatelessWidget {
             ),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
-              child: TextField(
-                // controller: widget.messageSenderControllergg,
-                onChanged: (value) {},
-                maxLines: null,
-                style: const TextStyle(color: Colors.white70),
-                decoration: const InputDecoration(
-                  border: InputBorder.none,
-                  hintText: 'Second search result will go here',
-                  hintStyle: TextStyle(color: Colors.white70),
-                ),
-              ),
+              child: Text(
+    // controller: widget.messageSenderControllergg,
+    "Second search result will go here"
+    ),
             ),
           ),
         )
